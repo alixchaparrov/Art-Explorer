@@ -149,5 +149,5 @@ Dieses Projekt nutzt die öffentliche [Art Institute of Chicago API](https://api
 ## 🔧 Kontakt
 Wenn Sie Fragen oder Vorschläge haben, können Sie mich gerne kontaktieren:
 - **E-Mail:** alix.chava.95@gmail.com
-- **GitHub:** [github.com/username](https://github.com/username)
+- **GitHub:** [github.com/username]([https://github.com/username](https://github.com/alixchaparrov/Art-Explorer))
 
