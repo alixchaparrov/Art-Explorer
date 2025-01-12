@@ -1,0 +1,52 @@
+/* === Variables globales de color === */
+/* === Globale Farbvariablen === */
+:root {
+  --background: #ffffff; /* Fondo en modo claro / Hintergrund im hellen Modus */
+  --foreground: #171717; /* Color del texto en modo claro / Textfarbe im hellen Modus */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Fondo en modo oscuro / Hintergrund im dunklen Modus */
+    --foreground: #ededed; /* Color del texto en modo oscuro / Textfarbe im dunklen Modus */
+  }
+}
+
+/* === Estilos globales para el HTML y el body === */
+/* === Globale Stile für HTML und Body === */
+html,
+body {
+  max-width: 100vw; /* Evita que el contenido exceda el ancho de la ventana gráfica / Verhindert, dass der Inhalt die Fensterbreite überschreitet */
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal / Versteckt horizontalen Überlauf */
+}
+
+body {
+  color: var(--foreground); /* Usa el color de texto definido en las variables / Verwendet die in den Variablen definierte Textfarbe */
+  background: var(--background); /* Usa el color de fondo definido en las variables / Verwendet die in den Variablen definierte Hintergrundfarbe */
+  font-family: Arial, Helvetica, sans-serif; /* Define la tipografía global / Definiert die globale Schriftart */
+  -webkit-font-smoothing: antialiased; /* Suavizado de fuentes en navegadores basados en WebKit / Schriftglättung in WebKit-Browsern */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado de fuentes en macOS / Schriftglättung auf macOS */
+}
+
+/* === Reseteo de estilos globales === */
+/* === Globales Reset der Stile === */
+* {
+  box-sizing: border-box; /* Asegura que padding y bordes no aumenten el tamaño de los elementos / Stellt sicher, dass Polsterung und Ränder die Elementgröße nicht beeinflussen */
+  padding: 0; /* Elimina el padding predeterminado / Entfernt die Standard-Polsterung */
+  margin: 0; /* Elimina los márgenes predeterminados / Entfernt die Standard-Abstände */
+}
+
+/* === Estilos para enlaces === */
+/* === Stile für Links === */
+a {
+  color: inherit; /* Hereda el color del texto circundante / Erbt die Farbe des umgebenden Textes */
+  text-decoration: none; /* Elimina el subrayado predeterminado / Entfernt die Standard-Unterstreichung */
+}
+
+/* === Soporte para modo oscuro === */
+/* === Unterstützung für den Dunkelmodus === */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark; /* Indica al navegador que está optimizado para modo oscuro / Gibt dem Browser an, dass der Dunkelmodus unterstützt wird */
+  }
+}

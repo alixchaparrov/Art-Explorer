@@ -1,0 +1,62 @@
+/* === Estilo general para tarjetas de arte === */
+/* === Allgemeiner Stil für Kunstkarten === */
+.card {
+  background-color: #fff; /* Fondo blanco para resaltar el contenido / Weißer Hintergrund, um den Inhalt hervorzuheben */
+  border: 1px solid #ddd; /* Borde gris claro / Hellgrauer Rand */
+  border-radius: 8px; /* Bordes redondeados para diseño suave / Abgerundete Ecken für ein weiches Design */
+  padding: 1rem; /* Espaciado interno uniforme / Gleichmäßiger Innenabstand */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad / Subtiler Schatten für Tiefe */
+  transition: transform 0.2s ease-in-out; /* Efecto de transformación suave / Sanfter Transformations-Effekt */
+  text-align: center; /* Centrado del texto / Zentrierung des Textes */
+}
+
+/* === Efecto de interacción al pasar el mouse sobre la tarjeta === */
+/* === Interaktionseffekt, wenn die Maus über die Karte fährt === */
+.card:hover {
+  transform: scale(1.03); /* Efecto de aumento / Vergrößerungseffekt */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para resaltar / Deutlichere Schatten zur Hervorhebung */
+}
+
+/* === Contenedor de la imagen === */
+/* === Bildcontainer === */
+.imageContainer {
+  width: 100%; /* El ancho de la imagen ocupa todo el contenedor / Bildbreite nimmt den gesamten Container ein */
+  height: 200px; /* Altura fija para las imágenes / Feste Höhe für die Bilder */
+  overflow: hidden; /* Oculta el contenido que excede del contenedor / Versteckt überflüssigen Inhalt */
+  background-color: #f0f0f0; /* Fondo gris claro para imágenes faltantes / Hellgrauer Hintergrund für fehlende Bilder */
+  border-radius: 8px; /* Bordes redondeados para igualar la tarjeta / Abgerundete Ecken, um zur Karte zu passen */
+  margin-bottom: 1rem; /* Espaciado inferior para separar la imagen del texto / Unterer Abstand, um das Bild vom Text zu trennen */
+}
+
+/* === Estilo de las imágenes dentro de la tarjeta === */
+/* === Stil für Bilder innerhalb der Karte === */
+.image {
+  width: 100%; /* El ancho de la imagen se adapta al contenedor / Bildbreite passt sich dem Container an */
+  height: 100%; /* La altura de la imagen llena el contenedor / Bildhöhe füllt den Container aus */
+  object-fit: cover; /* Recorta y ajusta la imagen sin deformarla / Beschneidet und passt das Bild an, ohne es zu verzerren */
+  display: block; /* Asegura que la imagen sea un bloque dentro del contenedor / Stellt sicher, dass das Bild ein Block innerhalb des Containers ist */
+}
+
+/* === Título de la obra de arte === */
+/* === Titel des Kunstwerks === */
+.title {
+  font-size: 1.2rem; /* Tamaño del texto ligeramente mayor / Etwas größere Schriftgröße */
+  font-weight: bold; /* Texto en negrita para destacar / Fettdruck, um hervorzuheben */
+  color: #333; /* Color oscuro para buen contraste / Dunkle Farbe für guten Kontrast */
+  margin-bottom: 0.5rem; /* Espaciado inferior para separar del artista / Unterer Abstand, um den Künstlernamen zu trennen */
+}
+
+/* === Nombre del artista === */
+/* === Name des Künstlers === */
+.artist {
+  font-size: 1rem; /* Tamaño estándar del texto / Standard-Schriftgröße */
+  color: #666; /* Color gris para menor énfasis / Graue Farbe für weniger Hervorhebung */
+  margin-bottom: 0.5rem; /* Espaciado inferior para separar de la fecha / Unterer Abstand, um das Datum zu trennen */
+}
+
+/* === Fecha de la obra de arte === */
+/* === Datum des Kunstwerks === */
+.date {
+  font-size: 0.9rem; /* Tamaño del texto ligeramente más pequeño / Etwas kleinere Schriftgröße */
+  color: #999; /* Color gris claro para menor énfasis / Helle Grautöne für weniger Hervorhebung */
+}

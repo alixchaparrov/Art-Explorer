@@ -1,0 +1,116 @@
+/* === Galería de Arte === */
+/* === Kunstgalerie === */
+
+/* Contenedor de la galería / Galerie-Container */
+.gallery-grid {
+  display: grid; /* Usar grid para organizar / Grid verwenden */
+  gap: 1.5rem; /* Espaciado entre elementos / Abstand zwischen den Elementen */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas dinámicas / Dynamische Spalten */
+  padding: 1rem; /* Espaciado interno / Innenabstand */
+}
+
+/* Tarjeta de arte / Kunstkarte */
+.art-card {
+  background-color: #ffffff; /* Fondo blanco / Weißer Hintergrund */
+  color: #222222; /* Texto oscuro / Dunkler Text */
+  padding: 1rem; /* Espaciado interno / Innenabstand */
+  border-radius: 8px; /* Bordes redondeados / Abgerundete Ecken */
+  text-align: center; /* Centrado del texto / Text zentriert */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera / Leichter Schatten */
+  transition: transform 0.2s, background-color 0.3s; /* Transiciones suaves / Sanfte Übergänge */
+}
+
+/* Animación de aparición / Einblend-Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Inicio invisible / Anfang unsichtbar */
+    transform: translateY(10px); /* Mover hacia abajo / Nach unten verschieben */
+  }
+  to {
+    opacity: 1; /* Totalmente visible / Voll sichtbar */
+    transform: translateY(0); /* Posición original / Ursprüngliche Position */
+  }
+}
+
+/* Hover en tarjeta / Hover-Effekt auf der Karte */
+.art-card:hover {
+  transform: scale(1.05); /* Ampliar ligeramente / Leicht vergrößern */
+  background-color: var(--foreground); /* Fondo invertido / Hintergrund umkehren */
+  color: var(--background); /* Cambiar color del texto / Textfarbe ändern */
+}
+
+/* Imagen de la tarjeta / Kartenbild */
+.art-card img {
+  max-width: 100%; /* Ajuste al contenedor / Anpassung an den Container */
+  height: auto; /* Mantener proporción / Proportion beibehalten */
+  border-radius: 4px; /* Bordes redondeados / Abgerundete Ecken */
+  margin-bottom: 0.5rem; /* Separación del texto / Abstand vom Text */
+}
+
+/* Título de la página / Seitentitel */
+.page-title {
+  text-align: center; /* Centrado del texto / Text zentriert */
+  font-size: 2.5rem; /* Tamaño grande / Große Schriftgröße */
+  font-weight: bold; /* Texto en negrita / Fettdruck */
+  margin-top: 2rem; /* Espaciado superior / Oberer Abstand */
+  margin-bottom: 1.5rem; /* Espaciado inferior / Unterer Abstand */
+}
+
+/* Mensaje de error / Fehlermeldung */
+.error-message {
+  color: red; /* Texto rojo / Roter Text */
+  text-align: center; /* Centrado del texto / Text zentriert */
+  margin: 1rem 0; /* Espaciado superior/inferior / Oberer/Unterer Abstand */
+}
+
+/* Botones de paginación / Paginierungsschaltflächen */
+.pagination-controls {
+  display: flex; /* Diseño en fila / Reihenlayout */
+  justify-content: center; /* Centrar contenido / Inhalte zentrieren */
+  margin-top: 1rem; /* Espaciado superior / Oberer Abstand */
+  gap: 0.5rem; /* Espaciado entre botones / Abstand zwischen den Schaltflächen */
+}
+
+.pagination-button {
+  padding: 0.5rem 1rem; /* Tamaño del botón / Größe der Schaltfläche */
+  border: none; /* Sin bordes / Kein Rand */
+  background-color: #0070f3; /* Fondo azul / Blauer Hintergrund */
+  color: #fff; /* Texto blanco / Weißer Text */
+  border-radius: 4px; /* Bordes redondeados / Abgerundete Ecken */
+  cursor: pointer; /* Cambiar cursor a mano / Zeiger als Hand ändern */
+  transition: background-color 0.3s ease; /* Transición suave / Sanfter Übergang */
+}
+
+.pagination-button:disabled {
+  background-color: #ccc; /* Fondo gris / Grauer Hintergrund */
+  cursor: not-allowed; /* Cursor deshabilitado / Deaktivierter Zeiger */
+}
+
+/* Skeleton Loader / Platzhalter-Loader */
+.skeleton-card {
+  width: 100%; /* Ancho completo / Volle Breite */
+  height: 300px; /* Altura fija / Feste Höhe */
+  background: #f0f0f0; /* Fondo gris claro / Hellgrauer Hintergrund */
+  border-radius: 8px; /* Bordes redondeados / Abgerundete Ecken */
+  animation: skeleton-loading 1.5s infinite; /* Animación de carga / Ladeanimation */
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #e0e0e0; /* Gris oscuro / Dunkleres Grau */
+  }
+  100% {
+    background-color: #f0f0f0; /* Gris claro / Hellgrau */
+  }
+}
+
+/* Entrada de búsqueda / Suchfeld */
+.search-input {
+  width: 100%; /* Ancho completo / Volle Breite */
+  max-width: 400px; /* Ancho máximo / Maximale Breite */
+  padding: 0.5rem; /* Espaciado interno / Innenabstand */
+  margin: 1rem auto; /* Centrado y espaciado / Zentriert mit Abstand */
+  border: 1px solid #ccc; /* Borde gris claro / Hellgrauer Rand */
+  border-radius: 8px; /* Bordes redondeados / Abgerundete Ecken */
+  font-size: 1rem; /* Tamaño estándar / Standardgröße */
+}

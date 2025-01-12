@@ -1,0 +1,54 @@
+/* Contenedor principal / Hauptcontainer */
+.container {
+  max-width: 800px; /* Ancho máximo / Maximale Breite */
+  margin: 0 auto; /* Centrado horizontal / Horizontale Zentrierung */
+  padding: 20px; /* Espaciado interno / Innenabstand */
+  text-align: center; /* Texto centrado / Text zentriert */
+}
+
+/* Título / Titel */
+.title {
+  font-size: 2rem; /* Tamaño del título / Titelgröße */
+  margin-bottom: 10px; /* Espacio inferior / Unterer Abstand */
+}
+
+/* Estilo del artista y la fecha / Stil für Künstler und Datum */
+.artist,
+.date {
+  font-size: 1.2rem; /* Tamaño del texto / Textgröße */
+  margin: 5px 0; /* Espaciado / Abstand */
+}
+
+/* Imagen principal / Hauptbild */
+.image {
+  max-width: 100%; /* Ajustar al ancho / Anpassung an die Breite */
+  height: auto; /* Mantener proporciones / Proportionen beibehalten */
+  margin-top: 20px; /* Espacio superior / Oberer Abstand */
+  border-radius: 10px; /* Bordes redondeados / Abgerundete Ecken */
+}
+
+/* Mensaje de error / Fehlermeldung */
+.error {
+  text-align: center; /* Texto centrado / Text zentriert */
+  padding: 50px; /* Espaciado interno / Innenabstand */
+  font-size: 1.5rem; /* Tamaño del texto / Textgröße */
+  color: red; /* Color rojo / Rote Farbe */
+}
+
+/* Botón para compartir / Teilen-Schaltfläche */
+.shareButton {
+  margin-top: 20px; /* Espacio superior / Oberer Abstand */
+  padding: 10px 20px; /* Relleno interno / Innenabstand */
+  font-size: 1rem; /* Tamaño del texto / Textgröße */
+  background-color: #007bff; /* Color azul / Blaue Farbe */
+  color: white; /* Texto blanco / Weißer Text */
+  border: none; /* Sin borde / Kein Rand */
+  border-radius: 5px; /* Bordes redondeados / Abgerundete Ecken */
+  cursor: pointer; /* Manito al pasar / Mauszeiger ändern */
+  transition: background-color 0.3s; /* Cambio suave de color / Sanfter Farbwechsel */
+}
+
+/* Cambio de color al pasar el mouse / Farbwechsel beim Hover */
+.shareButton:hover {
+  background-color: #0056b3; /* Azul oscuro / Dunkelblau */
+}

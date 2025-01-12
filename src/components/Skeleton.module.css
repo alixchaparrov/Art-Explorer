@@ -1,0 +1,45 @@
+/* === Contenedor del esqueleto para cargar contenido === */
+/* === Skelettcontainer zum Laden von Inhalten === */
+.skeleton {
+  display: flex; /* Diseño flexible para alinear elementos / Flexibles Layout zur Ausrichtung von Elementen */
+  flex-direction: column; /* Elementos en columna / Elemente in einer Spalte */
+  align-items: center; /* Centrados horizontalmente / Horizontal zentriert */
+  gap: 10px; /* Espaciado entre elementos / Abstand zwischen den Elementen */
+  background: #f4f4f4; /* Fondo gris claro / Hellgrauer Hintergrund */
+  padding: 20px; /* Espaciado interno / Innenabstand */
+  border-radius: 8px; /* Bordes redondeados / Abgerundete Ecken */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera / Leichter Schatten */
+  animation: pulse 1.5s infinite; /* Animación de pulsación para indicar carga / Puls-Animation zur Anzeige des Ladens */
+}
+
+/* === Esqueleto para imágenes === */
+/* === Skelett für Bilder === */
+.skeletonImage {
+  width: 100%; /* Ancho completo / Volle Breite */
+  height: 150px; /* Altura fija para mantener proporción / Feste Höhe zur Beibehaltung der Proportionen */
+  background: #e0e0e0; /* Fondo gris para simular una imagen / Grauer Hintergrund zur Simulation eines Bildes */
+  border-radius: 4px; /* Bordes ligeramente redondeados / Leicht abgerundete Ecken */
+}
+
+/* === Esqueleto para texto === */
+/* === Skelett für Text === */
+.skeletonText {
+  width: 80%; /* Ancho del 80% para simular texto / Breite von 80% zur Textsimulation */
+  height: 20px; /* Altura fija para líneas de texto / Feste Höhe für Textzeilen */
+  background: #e0e0e0; /* Fondo gris para simular texto / Grauer Hintergrund zur Simulation von Text */
+  border-radius: 4px; /* Bordes ligeramente redondeados / Leicht abgerundete Ecken */
+}
+
+/* === Animación de pulsación para el esqueleto === */
+/* === Puls-Animation für das Skelett === */
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0; /* Color inicial / Startfarbe */
+  }
+  50% {
+    background-color: #f0f0f0; /* Color más claro en el medio / Hellerer Farbton in der Mitte */
+  }
+  100% {
+    background-color: #e0e0e0; /* Color final / Endfarbe */
+  }
+}
